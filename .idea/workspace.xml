@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9fd386de-ecfd-4966-a972-edd10764cd6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,25 +60,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="form" value="1" />
-          <entry key="java" value="1" />
+          <entry key="form" value="2" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="GUI_DESIGNER_FORM" value="1" />
-          <entry key="JAVA" value="1" />
+          <entry key="GUI_DESIGNER_FORM" value="2" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="184" />
+          <entry key="java" value="194" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="184" />
+          <entry key="JAVA" value="194" />
           <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
@@ -85,20 +87,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1224">
-              <caret line="356" column="3" selection-start-line="356" selection-start-column="3" selection-end-line="356" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="134">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form">
-          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -121,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sm/utils/ResultEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/service/AdminServie.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sm/service/impl/AdminServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminFrame.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/MyFrame.java" />
@@ -146,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/sm/dao/impl/AdminDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sm/dao/impl/DepartmentDAOImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/factory/ServiceFacotry.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sm/dao/impl/CClassDAOImplTest(1).java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/service/CClassService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sm/service/impl/CClassServiceImplTest.java" />
@@ -169,6 +161,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sm/utils/AliOSSUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form" />
       </list>
     </option>
   </component>
@@ -203,12 +197,14 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="36" />
     <option name="width" value="1110" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -264,6 +260,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sm" type="462c0819:PsiDirectoryNode" />
               <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminLoginFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="student-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sm" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
               <item name="AdminMainFrame" type="e9f4de52:FormNode" />
             </path>
             <path>
@@ -296,7 +302,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="324" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558795783754" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558797375750" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -341,7 +347,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AdminMainFrame">
+  <component name="RunManager" selected="Application.AdminLoginFrame">
     <configuration name="AdminLoginFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sm.frame.AdminLoginFrame" />
       <module name="student-manage" />
@@ -418,8 +424,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AdminMainFrame" />
         <item itemvalue="Application.AdminLoginFrame" />
+        <item itemvalue="Application.AdminMainFrame" />
         <item itemvalue="Application.AliOSSUtil" />
         <item itemvalue="JUnit.StudentServiceImplTest" />
         <item itemvalue="JUnit.StudentDAOImplTest" />
@@ -453,7 +459,7 @@
       <workItem from="1558762188259" duration="3538000" />
       <workItem from="1558775541555" duration="2176000" />
       <workItem from="1558783705068" duration="2227000" />
-      <workItem from="1558786975404" duration="8658000" />
+      <workItem from="1558786975404" duration="10247000" />
     </task>
     <task id="LOCAL-00001" summary="学生管理系统">
       <created>1558795445132</created>
@@ -462,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558795445132</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="学生管理系统">
+      <created>1558795915266</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558795915266</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -498,12 +511,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87153000" />
+    <option name="totallyTimeSpent" value="88742000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="0" width="888" height="832" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38795182" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21581769" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -513,7 +527,7 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.4401914" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32854864" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32991204" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39872408" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -521,7 +535,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.785503" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.785503" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -544,13 +558,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="学生管理系统" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/DepartmentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/service/DepartmentService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -804,24 +811,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="356" column="3" selection-start-line="356" selection-start-column="3" selection-end-line="356" selection-end-column="3" />
+        <state relative-caret-position="502">
+          <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
         </state>
       </provider>
     </entry>

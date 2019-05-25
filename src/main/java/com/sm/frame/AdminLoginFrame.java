@@ -2,6 +2,7 @@ package com.sm.frame;
 
 import com.sm.entity.Admin;
 import com.sm.factory.ServiceFactory;
+import com.sm.ui.ImgPanel;
 import com.sm.utils.ResultEntity;
 
 import javax.swing.*;
@@ -9,7 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AdminLoginFrame extends JFrame{
-    private JPanel rootPanel;
+    private ImgPanel rootPanel;
     private JLabel accountLabel;
     private JLabel passwordLabel;
     private JTextField textField1;
@@ -24,10 +25,14 @@ public class AdminLoginFrame extends JFrame{
     private JButton dengluButton;
 
     public AdminLoginFrame() {
+
+        rootPanel.setFileName("bg2.jpg");
+        rootPanel.repaint();
+
         setTitle("管理员登录");
         setContentPane(rootPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 350);
+        setSize(600, 700);
         setLocationRelativeTo(null);
         setVisible(true);
         登录Button.addActionListener(new ActionListener() {
