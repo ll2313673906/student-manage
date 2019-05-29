@@ -35,6 +35,19 @@ public class CClassServiceImpl implements CClassService {
     }
 
     @Override
+    public List<CClass> selectAll() {
+
+            List<CClass> cClassList = null;
+            try {
+                cClassList = cClassDAO.selectAll();
+            } catch (SQLException e) {
+                System.err.print("查询院系信息出现异常");
+            }
+            return cClassList;
+        }
+
+
+    @Override
     public void deleteCClassId(long id) {
         try {
             cClassDAO.deleteClassById((int) id);
@@ -43,6 +56,25 @@ public class CClassServiceImpl implements CClassService {
         }
 
     }
+
+
+
+
+
+
+
+    @Override
+    public int countByDepartmentId(int departmentId) throws SQLException {
+        int n = 0;
+        try {
+            departmentId = cClassDAO.countByDepartmentId(departmentId);
+        } catch (SQLException e) {
+            System.err.print("查询院系信息出现异常");
+        }
+        return n;
     }
+}
+
+
 
 

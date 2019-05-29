@@ -19,22 +19,31 @@ public class CClassDAOImpl implements CClassDAO {
         Connection connection = jdbcUtil.getConnection();
         String sql = "SELECT * FROM t_class WHERE department_id=? ";
         PreparedStatement pstmt = connection.prepareStatement(sql);
-        pstmt.setString(1, String.valueOf(departmentId));
+        pstmt.setInt(1,departmentId);
+        // pstmt.setString(1, String.valueOf(departmentId));
         ResultSet rs = pstmt.executeQuery();
+        List<CClass> cClassList = convert(rs);
         List<CClass> cClasses = new ArrayList<>();
-        while (rs.next()) {
-            CClass cClass = new CClass();
-            cClass.setId(rs.getInt("id"));
-            cClass.setDepartmentId(rs.getInt("department_id"));
-            cClass.setClassName(rs.getString("class_name"));
-            cClasses.add(cClass);
-        }
+        // while (rs.next()) {
+        //     CClass cClass = new CClass();
+        //     cClass.setId(rs.getInt("id"));
+        //     cClass.setDepartmentId(rs.getInt("department_id"));
+        //     cClass.setClassName(rs.getString("class_name"));
+        //     cClasses.add(cClass);
+        // }
         rs.close();
         pstmt.close();
         jdbcUtil.closeConnection();
-        return cClasses;
+        //return cClasses;
+        return cClassList;
     }
 
+    /**
+     * 新增班级
+     * @param cClass
+     * @return
+     * @throws SQLException
+     */
     @Override
     public int insertClass(CClass cClass) throws SQLException {
         JDBCUtil jdbcUtil = JDBCUtil.getInitJDBCUtil();
@@ -49,6 +58,12 @@ public class CClassDAOImpl implements CClassDAO {
         return n;
     }
 
+    /**
+     * 删除班级
+     * @param id
+     * @return
+     * @throws SQLException
+     */
     @Override
     public long deleteClassById(long id) throws SQLException {
         JDBCUtil jdbcUtil = JDBCUtil.getInitJDBCUtil();
@@ -61,8 +76,52 @@ public class CClassDAOImpl implements CClassDAO {
         return n;
     }
 
+    @Override
+    public List<CClass> selectAll() throws SQLException {
+        //学生管理
+            JDBCUtil jdbcUtil = JDBCUtil.getInitJDBCUtil();
+            Connection connection = jdbcUtil.getConnection();
+            String sql = "SELECT * FROM t_class ORDER BY department_id";
+            PreparedStatement pstmt = connection.prepareStatement(sql);
+            ResultSet rs = pstmt.executeQuery();
+            List<CClass> cClassList = convert(rs);
+            rs.close();
+            pstmt.close();
+            jdbcUtil.closeConnection();
+            return cClassList;
+
+        }
 
 
+    @Override
+    public int countByDepartmentId(int departmentId) throws SQLException {
+        JDBCUtil jdbcUtil = JDBCUtil.getInitJDBCUtil();
+        Connection connection = jdbcUtil.getConnection();
+        String sql = "SELECT COUNT(*) FROM t_class WHERE department_id = ?";
+        PreparedStatement pstmt = connection.prepareStatement(sql);
+        pstmt.setInt(1,departmentId);
+        ResultSet rs = pstmt.executeQuery();
+        int rowCount = 0;
+        if (rs.next()){
+            rowCount = rs.getInt(1);
+        }
+        rs.close();
+        pstmt.close();
+        jdbcUtil.closeConnection();
+        return rowCount;
+    }
+    private List<CClass> convert(ResultSet rs) throws SQLException {
+        List<CClass> cClassList = new ArrayList<>();
+        while (rs.next()) {
+            CClass cClass = new CClass();
+            cClass.setId(rs.getInt("id"));
+            cClass.setDepartmentId(rs.getInt("department_id"));
+            cClass.setClassName(rs.getString("class_name"));
+            cClassList.add(cClass);
+        }
+        return cClassList;
+
+    }
     public static void main(String[] args) {
 
     }

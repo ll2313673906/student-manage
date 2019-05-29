@@ -1,5 +1,6 @@
 package com.sm.service.impl;
 import com.sm.entity.CClass;
+import com.sm.entity.Student;
 import com.sm.entity.StudentVO;
 import com.sm.factory.ServiceFactory;
 import com.sm.service.StudentService;
@@ -15,5 +16,42 @@ public class StudentServiceImplTest {
     public void selectAll() {
         List<StudentVO> studentVOList = studentService.selectAll();
         studentVOList.forEach(studentVO -> System.out.println(studentVO));
+    }
+
+    @Test
+    public void selectByDepartmentId() {
+        List<StudentVO> studentVOList = studentService.selectByDepartmentId(3);
+        studentVOList.forEach(studentVO -> System.out.println(studentVO));
+    }
+
+    @Test
+    public void selectByClassId() {
+        List<StudentVO> studentVOList = studentService.selectByClassId(3);
+        studentVOList.forEach(studentVO -> System.out.println(studentVO));
+    }
+
+    @Test
+    public void selectByKeywords() {
+        List<StudentVO> studentVOList = studentService.selectByKeywords("江苏");
+        studentVOList.forEach(studentVO -> System.out.println(studentVO));
+    }
+
+    @Test
+    public void updateStudent() {
+        /**
+         * 编辑学生信息
+         */
+        Student student = new Student();
+        student.setId("1802343311");
+        student.setAddress("毕节");
+        student.setPhone("22233344");
+        studentService.updateStudent(student);
+
+    }
+
+    @Test
+    public void deleteById() {
+        //删除学生
+        studentService.deleteById("1802343312");
     }
 }
