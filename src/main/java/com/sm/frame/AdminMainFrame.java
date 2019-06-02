@@ -3,6 +3,7 @@ package com.sm.frame;
 import com.sm.entity.*;
 import com.sm.factory.DAOFactory;
 import com.sm.factory.ServiceFactory;
+import com.sm.thread.DateThread;
 import com.sm.ui.ImgPanel;
 import com.sm.utils.AliOSSUtil;
 import net.coobird.thumbnailator.Thumbnails;
@@ -74,21 +75,30 @@ public class AdminMainFrame extends  JFrame {
     private File toPic;
     private JList jList;
     private int departmentId = 0;
-    private JPanel infoPanel;
+    private ImgPanel infoPanel;
     private JTextField stuAddressField;
     private JTextField stuPhoneField;
     private JButton 初始化数据Button;
     private JButton 编辑Button;
+    private JPanel rPunishTopPanel;
+    private JComboBox rPDepComboBox;
+    private JComboBox rPClassComboBox;
     private int row;
+    private JLabel dateLabel;
 
     public AdminMainFrame(Admin admin) {
+        DateThread dateThread = new DateThread();
+        new Thread(dateThread).start();
+       dateThread.setDateLabel(dateLabel);
+
         this.admin = admin;
         adminNameLabel.setText("当前管理员：" + admin.getAdminName());
 
 
         rootPanel.setFileName("aa.jpg");
         rootPanel.repaint();
-
+        infoPanel.setFileName("e.jpg");
+        infoPanel.repaint();
 
 
         setTitle("管理员主界面");
@@ -380,6 +390,7 @@ public class AdminMainFrame extends  JFrame {
         新增学生Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                new AddStudentFrame(AdminMainFrame.this);
 
             }
         });

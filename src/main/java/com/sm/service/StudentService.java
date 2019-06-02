@@ -48,6 +48,13 @@ public interface StudentService {
      */
     void deleteById(String id);
 
+    /**
+     * 新增学生
+     * @param student
+     * @return
+     */
+    int insertStudent(Student student);
+
 
 
 

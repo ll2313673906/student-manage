@@ -6,6 +6,7 @@ import com.sm.factory.ServiceFactory;
 import com.sm.service.StudentService;
 import org.junit.Test;
 
+import java.util.Date;
 import java.util.List;
 
 public class StudentServiceImplTest {
@@ -53,5 +54,20 @@ public class StudentServiceImplTest {
     public void deleteById() {
         //删除学生
         studentService.deleteById("1802343312");
+    }
+
+    @Test
+    public void insertStudent() {
+        //新增学生
+        Student student = new Student();
+        student.setId("123");
+        student.setClassID(3);
+        student.setStudentName("刘恋");
+        student.setBirthday(new Date());
+        student.setAvatar("");
+        student.setGender("女");
+        student.setAddress("南京");
+        student.setPhone("2222222");
+        int n = studentService.insertStudent(student);
     }
 }

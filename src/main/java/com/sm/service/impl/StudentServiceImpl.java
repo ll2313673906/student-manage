@@ -86,6 +86,19 @@ public class StudentServiceImpl implements StudentService {
         }
     }
 
+    @Override
+    public int insertStudent(Student student) {
+        //新增学生
+        int n = 0;
+        try {
+            n = studentDAO.insertStudent(student);
+        }catch (SQLException e){
+            System.out.println("新增学生信息出现异常");
+        }
+        return n;
+
+    }
+
 
     @Override
     public int countByDepartmentId(int departmentId) {

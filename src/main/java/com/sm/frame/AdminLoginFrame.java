@@ -6,6 +6,7 @@ import com.sm.ui.ImgPanel;
 import com.sm.utils.ResultEntity;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -15,7 +16,6 @@ public class AdminLoginFrame extends JFrame{
     private JLabel passwordLabel;
     private JTextField textField1;
     private JPasswordField passwordField1;
-    private JPanel btnPanel;
     private JButton 登录Button;
     private JButton 取消Button;
     private JTextField accountField;
@@ -26,8 +26,9 @@ public class AdminLoginFrame extends JFrame{
 
     public AdminLoginFrame() {
 
-        rootPanel.setFileName("bg2.jpg");
+        rootPanel.setFileName("cc.jpg");
         rootPanel.repaint();
+        imgLabel.setPreferredSize(new Dimension(50,50));
 
         setTitle("管理员登录");
         setContentPane(rootPanel);
