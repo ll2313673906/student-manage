@@ -1,13 +1,7 @@
 package com.sm.factory;
 
-import com.sm.dao.AdminDAO;
-import com.sm.dao.CClassDAO;
-import com.sm.dao.DepartmentDAO;
-import com.sm.dao.StudentDAO;
-import com.sm.dao.impl.AdminDAOImpl;
-import com.sm.dao.impl.CClassDAOImpl;
-import com.sm.dao.impl.DepartmentDAOImpl;
-import com.sm.dao.impl.StudentDAOImpl;
+import com.sm.dao.*;
+import com.sm.dao.impl.*;
 
 public class DAOFactory {
     public static AdminDAO getAdminDAOInstance() {
@@ -24,6 +18,9 @@ public class DAOFactory {
 
     public static StudentDAO getStudentDAOIntance() {
         return new StudentDAOImpl();
+    }
+    public static RewardsDAO getRewardsDAOIntance(){
+        return new RewardsDAOImpl();
     }
 }
 

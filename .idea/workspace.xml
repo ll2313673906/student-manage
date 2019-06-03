@@ -2,36 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fd386de-ecfd-4966-a972-edd10764cd6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AddStudentFrame.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AddStudentFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/thread/DateThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/d.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jar/datepicker.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/dao/RewardsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/dao/impl/RewardsDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/entity/Rewards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/RewardsAddFrame.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/RewardsAddFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/service/RewardsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sm/service/impl/RewardsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sm/dao/impl/RewardsDAOImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sm/service/impl/RewardsServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/dao/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/dao/impl/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/dao/impl/StudentDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/factory/DAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/factory/DAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/factory/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/factory/ServiceFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sm/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sm/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sm/dao/impl/StudentDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sm/dao/impl/StudentDAOImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sm/service/impl/StudentServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sm/service/impl/StudentServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/dao/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/dao/StudentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/dao/impl/StudentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/dao/impl/StudentDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminLoginFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminLoginFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/factory/DAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/factory/DAOFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/factory/ServiceFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/factory/ServiceFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminLoginFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminLoginFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminLoginFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminLoginFrame$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$11.class" afterDir="false" />
@@ -40,9 +28,9 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$14.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$15.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$16.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$17$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$17$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$17$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$17.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$18$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$18$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$18$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$18.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$19.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$2.class" afterDir="false" />
@@ -56,18 +44,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/frame/AdminMainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sm/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sm/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/img/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sm/dao/impl/StudentDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sm/dao/impl/StudentDAOImplTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sm/service/impl/StudentServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sm/service/impl/StudentServiceImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -176,30 +152,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="form" value="14" />
-          <entry key="java" value="121" />
-          <entry key="jpg" value="15" />
+          <entry key="form" value="20" />
+          <entry key="java" value="169" />
+          <entry key="jpg" value="16" />
           <entry key="png" value="13" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="GUI_DESIGNER_FORM" value="14" />
-          <entry key="Image" value="28" />
-          <entry key="JAVA" value="121" />
+          <entry key="GUI_DESIGNER_FORM" value="20" />
+          <entry key="Image" value="29" />
+          <entry key="JAVA" value="169" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="5788" />
+          <entry key="java" value="6048" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5788" />
+          <entry key="JAVA" value="6048" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -208,10 +184,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sm/dao/impl/RewardsDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+            <state relative-caret-position="689">
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/impl/RewardsDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="63" column="2" lean-forward="true" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,8 +213,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
@@ -233,16 +224,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/TestFrame.form" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/TestFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMain1Frame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMain1Frame.form" />
-        <option value="$USER_HOME$/Documents/WeChat Files/lll15268945092/FileStorage/File/2019-05/AdminMainFrame(1).java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/dao/AdminDAO.java" />
-        <option value="$USER_HOME$/Documents/WeChat Files/lll15268945092/FileStorage/File/2019-05/DepartmentDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/dao/impl/AdminDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/dao/DepartmentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/dao/impl/DepartmentDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/utils/JDBCUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sm/service/impl/DepartmentServiceImplTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -259,8 +240,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sm/entity/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/dao/impl/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/entity/StudentVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/factory/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/factory/ServiceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/utils/AliOSSUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/service/DepartmentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/service/impl/DepartmentServiceImpl.java" />
@@ -278,12 +257,24 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/addStudentFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/thread/NumThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/thread/DateThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AddStudentFrame.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form" />
         <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AddStudentFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/entity/JiangCheng.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/entity/Rewards.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/dao/RewardsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/factory/DAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/service/RewardsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/factory/ServiceFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/service/impl/RewardsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/RewardsAddFrame.form" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/RewardsAddFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/dao/impl/RewardsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sm/service/impl/RewardsServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sm/dao/impl/RewardsDAOImplTest.java" />
       </list>
     </option>
   </component>
@@ -320,9 +311,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="y" value="25" />
-    <option name="width" value="984" />
-    <option name="height" value="985" />
+    <option name="y" value="7" />
+    <option name="width" value="963" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -392,6 +383,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sm" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sm" type="462c0819:PsiDirectoryNode" />
               <item name="factory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -411,7 +411,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sm" type="462c0819:PsiDirectoryNode" />
               <item name="frame" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminLoginFrame" type="e9f4de52:FormNode" />
+              <item name="AdminMainFrame" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="student-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sm" type="462c0819:PsiDirectoryNode" />
+              <item name="frame" type="462c0819:PsiDirectoryNode" />
+              <item name="RewardsAddFrame" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="student-manage" type="b2602c69:ProjectViewProjectNode" />
@@ -449,6 +459,21 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sm" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="student-manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="student-manage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="student-manage" type="b2602c69:ProjectViewProjectNode" />
@@ -503,10 +528,10 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="324" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559484838360" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559548459112" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/jar/datepicker.jar!/" />
+    <property name="last_opened_file_path" value="E:/Java Study/student-manage" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -526,15 +551,15 @@
       <recent name="com.sm.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JavaStudy\student-manage\src\main\java\com\sm\frame" />
       <recent name="F:\JavaStudy\student-manage\src\main\resources\img" />
       <recent name="F:\JavaStudy\student-manage\src\main\resources\jar" />
       <recent name="E:\student-manage\src\main\resources\img" />
       <recent name="D:\student-manage\src\test\java\com\sm\dao\impl" />
-      <recent name="D:\student-manage\src\test\java\com\sm\service\impl" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sm.thread" />
       <recent name="com.sm.frame" />
+      <recent name="com.sm.thread" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.sm.factory" />
@@ -552,20 +577,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AdminLoginFrame">
-    <configuration name="AdminLoginFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sm.frame.AdminLoginFrame" />
-      <module name="student-manage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sm.frame.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RewardsDAOImplTest.insertRewards">
     <configuration name="AdminMainFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sm.frame.AdminMainFrame" />
       <module name="student-manage" />
@@ -579,7 +591,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDAOImplTest.insertStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RewardsDAOImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="student-manage" />
       <extension name="coverage">
         <pattern>
@@ -588,14 +600,12 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sm.dao.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.sm.dao.impl.StudentDAOImplTest" />
-      <option name="METHOD_NAME" value="insertStudent" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.sm.dao.impl.RewardsDAOImplTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentDAOImplTest.updateStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RewardsDAOImplTest.insertRewards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="student-manage" />
       <extension name="coverage">
         <pattern>
@@ -604,14 +614,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sm.dao.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.sm.dao.impl.StudentDAOImplTest" />
-      <option name="METHOD_NAME" value="updateStudent" />
+      <option name="MAIN_CLASS_NAME" value="com.sm.dao.impl.RewardsDAOImplTest" />
+      <option name="METHOD_NAME" value="insertRewards" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentServiceImplTest.insertStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RewardsServiceImplTest.insertRewards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="student-manage" />
       <extension name="coverage">
         <pattern>
@@ -620,8 +630,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.sm.service.impl.StudentServiceImplTest" />
-      <option name="METHOD_NAME" value="insertStudent" />
+      <option name="MAIN_CLASS_NAME" value="com.sm.service.impl.RewardsServiceImplTest" />
+      <option name="METHOD_NAME" value="insertRewards" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RewardsServiceImplTest.selectByKeywords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="student-manage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sm.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sm.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.sm.service.impl.RewardsServiceImplTest" />
+      <option name="METHOD_NAME" value="selectByKeywords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -629,18 +655,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.AdminMainFrame" />
-      <item itemvalue="JUnit.StudentDAOImplTest.updateStudent" />
-      <item itemvalue="JUnit.StudentDAOImplTest.insertStudent" />
-      <item itemvalue="JUnit.StudentServiceImplTest.insertStudent" />
-      <item itemvalue="Application.AdminLoginFrame" />
+      <item itemvalue="JUnit.RewardsServiceImplTest.selectByKeywords" />
+      <item itemvalue="JUnit.RewardsServiceImplTest.insertRewards" />
+      <item itemvalue="JUnit.RewardsDAOImplTest" />
+      <item itemvalue="JUnit.RewardsDAOImplTest.insertRewards" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AdminLoginFrame" />
+        <item itemvalue="JUnit.RewardsDAOImplTest.insertRewards" />
+        <item itemvalue="JUnit.RewardsDAOImplTest" />
         <item itemvalue="Application.AdminMainFrame" />
-        <item itemvalue="JUnit.StudentServiceImplTest.insertStudent" />
-        <item itemvalue="JUnit.StudentDAOImplTest.insertStudent" />
-        <item itemvalue="JUnit.StudentDAOImplTest.updateStudent" />
+        <item itemvalue="JUnit.RewardsServiceImplTest.insertRewards" />
+        <item itemvalue="JUnit.RewardsServiceImplTest.selectByKeywords" />
       </list>
     </recent_temporary>
   </component>
@@ -679,7 +705,7 @@
       <workItem from="1558958505032" duration="1199000" />
       <workItem from="1559049994846" duration="20000" />
       <workItem from="1559051056494" duration="2654000" />
-      <workItem from="1559056650503" duration="60827000" />
+      <workItem from="1559056650503" duration="73306000" />
     </task>
     <task id="LOCAL-00001" summary="学生管理系统">
       <created>1558795445132</created>
@@ -695,59 +721,66 @@
       <option name="project" value="LOCAL" />
       <updated>1558795915266</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="学生管理系统">
+      <created>1559484959379</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559484959379</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentDAOImplTest_insertStudent - 2019.05.29 at 19h 20m 06s.xml">
-      <configuration name="StudentDAOImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsDAOImplTest_insertRewards - 2019.06.03 at 14h 54m 28s.xml">
+      <configuration name="RewardsDAOImplTest.insertRewards" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDAOImplTest_insertStudent - 2019.05.29 at 19h 28m 21s.xml">
-      <configuration name="StudentDAOImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsDAOImplTest_insertRewards - 2019.06.03 at 14h 54m 50s.xml">
+      <configuration name="RewardsDAOImplTest.insertRewards" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentDAOImplTest_insertStudent - 2019.05.29 at 19h 43m 51s.xml">
-      <configuration name="StudentDAOImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsServiceImplTest_getAll - 2019.06.03 at 14h 56m 08s.xml">
+      <configuration name="RewardsServiceImplTest.getAll" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_insertStudent - 2019.05.29 at 19h 50m 43s.xml">
-      <configuration name="StudentServiceImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsServiceImplTest_selectByKeywords - 2019.06.03 at 14h 56m 20s.xml">
+      <configuration name="RewardsServiceImplTest.selectByKeywords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_insertStudent - 2019.05.29 at 19h 51m 38s.xml">
-      <configuration name="StudentServiceImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsServiceImplTest_selectByKeywords - 2019.06.03 at 14h 56m 40s.xml">
+      <configuration name="RewardsServiceImplTest.selectByKeywords" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_insertStudent - 2019.05.29 at 19h 52m 22s.xml">
-      <configuration name="StudentServiceImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsServiceImplTest_insertRewards - 2019.06.03 at 14h 56m 51s.xml">
+      <configuration name="RewardsServiceImplTest.insertRewards" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_insertStudent - 2019.05.29 at 19h 53m 08s.xml">
-      <configuration name="StudentServiceImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsServiceImplTest_insertRewards - 2019.06.03 at 14h 57m 06s.xml">
+      <configuration name="RewardsServiceImplTest.insertRewards" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_insertStudent - 2019.05.29 at 19h 54m 02s.xml">
-      <configuration name="StudentServiceImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsDAOImplTest - 2019.06.03 at 15h 52m 42s.xml">
+      <configuration name="RewardsDAOImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_insertStudent - 2019.05.29 at 19h 54m 17s.xml">
-      <configuration name="StudentServiceImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsDAOImplTest_insertRewards - 2019.06.03 at 15h 53m 35s.xml">
+      <configuration name="RewardsDAOImplTest.insertRewards" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StudentServiceImplTest_insertStudent - 2019.05.29 at 19h 55m 16s.xml">
-      <configuration name="StudentServiceImplTest.insertStudent" configurationId="JUnit" />
+    <history-entry file="RewardsDAOImplTest_insertRewards - 2019.06.03 at 15h 53m 51s.xml">
+      <configuration name="RewardsDAOImplTest.insertRewards" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156067000" />
+    <option name="totallyTimeSpent" value="168546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2419571" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19369973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.43612334" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.43548387" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32784185" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.37078652" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.30498534" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.8176101" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -808,166 +841,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="学生管理系统" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/CClassDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/impl/CClassDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/service/CClassService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/service/impl/CClassServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/StudentDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="59" column="11" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sm/dao/impl/StudentDAOImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sm/service/impl/StudentServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/main/resources/jar/datepicker.jar!/com/eltima/components/ui/DatePicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/StudentVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/CClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AddStudentFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="90" column="13" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/impl/StudentDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/thread/NumThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/thread/DateThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="24" column="87" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/bg1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/b.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/b.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/05.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -984,9 +857,6 @@
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/logoimg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/img/e.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/d.jpg">
@@ -1010,10 +880,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/img/shu1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
@@ -1027,27 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9460">
-          <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/impl/AdminDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/factory/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1079,13 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/factory/ServiceFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/sm/service/impl/AdminServiceImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1109,8 +951,265 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminLoginFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="435">
           <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+          <folding>
+            <element signature="class#2170:2376" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/JiangCheng.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/2313673906/FileRecv/Rewards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/2313673906/FileRecv/RewardsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/2313673906/FileRecv/RewardsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/2313673906/FileRecv/RewardsDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="869">
+          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/factory/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding>
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/2313673906/FileRecv/RewardsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/service/RewardsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/2313673906/FileRecv/RewardsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="949">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/factory/ServiceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Tencent Files/2313673906/FileRecv/RewardsServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/RewardsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/impl/StudentDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2423">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/impl/CClassDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1771">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/Rewards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-651">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/entity/StudentVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/RewardsAddFrame.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/img/e.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/RewardsAddFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/service/impl/RewardsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sm/service/impl/RewardsServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.form">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/frame/AdminMainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="758" column="14" lean-forward="true" selection-start-line="758" selection-start-column="14" selection-end-line="758" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sm/dao/impl/RewardsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="63" column="2" lean-forward="true" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sm/dao/impl/RewardsDAOImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

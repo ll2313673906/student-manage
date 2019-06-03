@@ -80,16 +80,19 @@ public class AdminMainFrame extends  JFrame {
     private JTextField stuPhoneField;
     private JButton 初始化数据Button;
     private JButton 编辑Button;
-    private JPanel rPunishTopPanel;
-    private JComboBox rPDepComboBox;
-    private JComboBox rPClassComboBox;
     private int row;
     private JLabel dateLabel;
+    private JComboBox comboBox3;
+    private JPanel listPanel;
+    private JTextField textField3;
+    private JButton 查询Button;
+    private JButton 新增奖惩Button;
+    private JButton 刷新Button;
 
     public AdminMainFrame(Admin admin) {
         DateThread dateThread = new DateThread();
         new Thread(dateThread).start();
-       dateThread.setDateLabel(dateLabel);
+        dateThread.setDateLabel(dateLabel);
 
         this.admin = admin;
         adminNameLabel.setText("当前管理员：" + admin.getAdminName());
@@ -108,7 +111,6 @@ public class AdminMainFrame extends  JFrame {
         setVisible(true);
 
         showDepartments();
-
 
 
         //获取centerPanel的布局,获取的是LayoutManager，向下转型为cardLayout
@@ -205,6 +207,11 @@ public class AdminMainFrame extends  JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 cardLayout.show(centerPanel, "Card4");
+                List<Rewards> rewardsList = ServiceFactory.getRewardsServiceInstance().getAll();
+                comboBox3.removeAllItems();
+                comboBox3.addItem("学号查询");
+                comboBox3.addItem("姓名查询");
+                showRewardsTable(rewardsList);
 
             }
         });
@@ -226,6 +233,8 @@ public class AdminMainFrame extends  JFrame {
                 //(刷新)重新请求所有院系数据
                 AdminMainFrame.this.showDepartments();
                 showDepartments();
+                leftPanel.setVisible(false);
+
             }
         });
 
@@ -245,7 +254,7 @@ public class AdminMainFrame extends  JFrame {
                 if (result == JFileChooser.APPROVE_OPTION) {
                     file = fileChooser.getSelectedFile();
                     Icon icon = new ImageIcon(file.getAbsolutePath());
-                    ((ImageIcon) icon).setImage(((ImageIcon) icon).getImage().getScaledInstance(200,220,Image.SCALE_DEFAULT));
+                    ((ImageIcon) icon).setImage(((ImageIcon) icon).getImage().getScaledInstance(200, 220, Image.SCALE_DEFAULT));
                     logoLabel.setIcon(icon);
                     logoLabel.setVisible(true);
                     选择logo图Button.setVisible(false);
@@ -294,10 +303,10 @@ public class AdminMainFrame extends  JFrame {
                     //选中文件,原图
                     file = fileChooser.getSelectedFile();
                     //指定缩略图大小
-                    toPic=fileChooser.getSelectedFile();
+                    toPic = fileChooser.getSelectedFile();
                     //此处把图片压成400×500的缩略图
                     try {
-                        Thumbnails.of(file).size(200,200).toFile(toPic);
+                        Thumbnails.of(file).size(200, 200).toFile(toPic);
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }
@@ -307,7 +316,8 @@ public class AdminMainFrame extends  JFrame {
                     logoLabel.setIcon(icon);
                     //设置标签可见
                     logoLabel.setVisible(true);
-                }}
+                }
+            }
         });
 
         //院系下拉框
@@ -392,6 +402,32 @@ public class AdminMainFrame extends  JFrame {
             public void actionPerformed(ActionEvent e) {
                 new AddStudentFrame(AdminMainFrame.this);
 
+            }
+        });
+
+        刷新Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                List<Rewards> rewardsList = ServiceFactory.getRewardsServiceInstance().getAll();
+                showRewardsTable(rewardsList);
+                textField3.setText("");
+            }
+        });
+        新增奖惩Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new RewardsAddFrame(AdminMainFrame.this);
+                AdminMainFrame.this.setEnabled(false);
+            }
+        });
+        查询Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String keywords = textField3.getText().trim();
+                List<Rewards> rewardsList = ServiceFactory.getRewardsServiceInstance().selectByKeywords(keywords);
+                if (rewardsList != null) {
+                    showRewardsTable(rewardsList);
+                }
             }
         });
 
@@ -682,6 +718,72 @@ public class AdminMainFrame extends  JFrame {
 
 
 
+    }
+    public void showRewardsTable(List<Rewards> rewardsList) {
+        listPanel.removeAll();
+        //创建表格
+        JTable table = new JTable();
+        //表格数据模型
+        DefaultTableModel model = new DefaultTableModel();
+        table.setModel(model);
+        //表头内容
+        model.setColumnIdentifiers(new String[]{"编号", "奖惩类型", "日期", "学号", "姓名", "原因"});
+        for (Rewards rewards : rewardsList) {
+            Object[] objects = new Object[]{rewards.getId(), rewards.getType(), rewards.getRewardsDate(), rewards.getNumber(), rewards.getName()
+                    , rewards.getReason()};
+            model.addRow(objects);
+        }
+        //获得表头
+        JTableHeader head = table.getTableHeader();
+        //表头居中
+        DefaultTableCellHeaderRenderer hr = new DefaultTableCellHeaderRenderer();
+        hr.setHorizontalAlignment(JLabel.CENTER);
+        head.setDefaultRenderer(hr);
+        //设置表头大小
+        head.setPreferredSize(new Dimension(head.getWidth(), 40));
+        //设置表头字体
+        head.setFont(new Font("楷体", Font.PLAIN, 22));
+        //设置表格行高
+        table.setRowHeight(35);
+        //表格背景色
+        table.setBackground(new Color(212, 212, 212));
+        //表格内容居中
+        DefaultTableCellRenderer r = new DefaultTableCellRenderer();
+        r.setHorizontalAlignment(JLabel.CENTER);
+        table.setDefaultRenderer(Object.class, r);
+        //表格加入滚动面板，水平垂直方向带滚动条
+        JScrollPane scrollPane = new JScrollPane(table, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+        listPanel.add(scrollPane);
+        listPanel.revalidate();
+        //弹出菜单
+        JPopupMenu jPopupMenu = new JPopupMenu();
+        JMenuItem item = new JMenuItem("删除");
+        jPopupMenu.add(item);
+        table.add(jPopupMenu);
+        table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                row = table.getSelectedRow();
+                if (e.getButton() == 3) {
+                    jPopupMenu.show(table, e.getX(), e.getY());
+                }
+            }
+        });
+        item.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String id = (String) table.getValueAt(row, 0);
+                int choice = JOptionPane.showConfirmDialog(listPanel, "确定删除吗");
+                if (choice == 0) {
+                    if (row != -1) {
+                        model.removeRow(row);
+                    }
+                    //刷新表格数据
+                    ServiceFactory.getRewardsServiceInstance().deleteById(id);
+                }
+            }
+        });
     }
     public static void main(String[] args) throws Exception{
         String lookAndFeel = UIManager.getSystemLookAndFeelClassName();
