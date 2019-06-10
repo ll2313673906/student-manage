@@ -207,11 +207,11 @@ public class AdminMainFrame extends  JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 cardLayout.show(centerPanel, "Card4");
-                List<Rewards> rewardsList = ServiceFactory.getRewardsServiceInstance().getAll();
+                List<RewardsVO> rewardsList = ServiceFactory.getRewardsServiceInstance().getAll();
                 comboBox3.removeAllItems();
-                comboBox3.addItem("学号查询");
-                comboBox3.addItem("姓名查询");
+                comboBox3.addItem("查询");
                 showRewardsTable(rewardsList);
+
 
             }
         });
@@ -408,9 +408,10 @@ public class AdminMainFrame extends  JFrame {
         刷新Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                List<Rewards> rewardsList = ServiceFactory.getRewardsServiceInstance().getAll();
-                showRewardsTable(rewardsList);
+//                List<Rewards> rewardsList = ServiceFactory.getRewardsServiceInstance().getAll();
+//                showRewardsTable(rewardsList);
                 textField3.setText("");
+
             }
         });
         新增奖惩Button.addActionListener(new ActionListener() {
@@ -423,11 +424,10 @@ public class AdminMainFrame extends  JFrame {
         查询Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String keywords = textField3.getText().trim();
-                List<Rewards> rewardsList = ServiceFactory.getRewardsServiceInstance().selectByKeywords(keywords);
-                if (rewardsList != null) {
-                    showRewardsTable(rewardsList);
-                }
+                String keywords = textField3.getText();
+                List<RewardsVO> rewardsList = ServiceFactory.getRewardsServiceInstance().selectByKeywords(keywords);
+                showRewardsTable(rewardsList);
+
             }
         });
 
@@ -719,7 +719,7 @@ public class AdminMainFrame extends  JFrame {
 
 
     }
-    public void showRewardsTable(List<Rewards> rewardsList) {
+    public void showRewardsTable(List<RewardsVO> rewardsList){
         listPanel.removeAll();
         //创建表格
         JTable table = new JTable();
@@ -727,10 +727,10 @@ public class AdminMainFrame extends  JFrame {
         DefaultTableModel model = new DefaultTableModel();
         table.setModel(model);
         //表头内容
-        model.setColumnIdentifiers(new String[]{"编号", "奖惩类型", "日期", "学号", "姓名", "原因"});
-        for (Rewards rewards : rewardsList) {
-            Object[] objects = new Object[]{rewards.getId(), rewards.getType(), rewards.getRewardsDate(), rewards.getNumber(), rewards.getName()
-                    , rewards.getReason()};
+        model.setColumnIdentifiers(new String[]{"id", "奖惩", "日期", "学号", "姓名", "内容"});
+        for (RewardsVO rewards:rewardsList) {
+            Object[] objects = new Object[]{rewards.getId(),rewards.getType(),rewards.getRewardsDate(),rewards.getStudentNumber(),rewards.getStudentName()
+                    ,rewards.getReason()};
             model.addRow(objects);
         }
         //获得表头
@@ -773,7 +773,7 @@ public class AdminMainFrame extends  JFrame {
         item.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String id = (String) table.getValueAt(row, 0);
+                int id = (int) table.getValueAt(row, 0);
                 int choice = JOptionPane.showConfirmDialog(listPanel, "确定删除吗");
                 if (choice == 0) {
                     if (row != -1) {

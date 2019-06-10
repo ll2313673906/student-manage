@@ -1,6 +1,7 @@
 package com.sm.service.impl;
 
 import com.sm.entity.Rewards;
+import com.sm.entity.RewardsVO;
 import com.sm.factory.ServiceFactory;
 import com.sm.service.RewardsService;
 import org.junit.Test;
@@ -13,8 +14,8 @@ public class RewardsServiceImplTest {
 
     @Test
     public void getAll() {
-        List<Rewards> rewardsList = rewardsService.getAll();
-        rewardsList.forEach(rewards -> System.out.println(rewards));
+//        List<Rewards> rewardsList = rewardsService.getAll();
+//        rewardsList.forEach(rewards -> System.out.println(rewards));
 
     }
 
@@ -25,18 +26,16 @@ public class RewardsServiceImplTest {
 
     @Test
     public void selectByKeywords() {
-        List<Rewards> rewardsList = rewardsService.selectByKeywords("张");
-        rewardsList.forEach(rewards -> System.out.println(rewards));
+      List<RewardsVO> rewardsList = rewardsService.selectByKeywords("四");
+       rewardsList.forEach(rewards -> System.out.println(rewards));
     }
 
     @Test
     public void insertRewards() {
         Rewards rewards = new Rewards();
-        rewards.setId("7");
         rewards.setType("奖励");
         rewards.setRewardsDate(new Date());
-        rewards.setNumber("180213221");
-        rewards.setName("张三");
+        rewards.setStudentNumber("1802343304");
         rewards.setReason("篮球比赛第一");
         rewardsService.insertRewards(rewards);
     }

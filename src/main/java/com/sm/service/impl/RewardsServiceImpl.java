@@ -2,6 +2,7 @@ package com.sm.service.impl;
 
 import com.sm.dao.RewardsDAO;
 import com.sm.entity.Rewards;
+import com.sm.entity.RewardsVO;
 import com.sm.factory.DAOFactory;
 import com.sm.service.RewardsService;
 
@@ -12,8 +13,8 @@ public class RewardsServiceImpl implements RewardsService {
 
     private RewardsDAO rewardsDAO = DAOFactory.getRewardsDAOIntance();
     @Override
-    public List<Rewards> getAll() {
-        List<Rewards> rewardsList = null;
+    public List<RewardsVO> getAll() {
+        List<RewardsVO> rewardsList = null;
         try {
             rewardsList = rewardsDAO.getAll();
         } catch (SQLException e) {
@@ -23,7 +24,7 @@ public class RewardsServiceImpl implements RewardsService {
     }
 
     @Override
-    public int deleteById(String id) {
+    public int deleteById(int id) {
         int result = 0;
         try {
             result = rewardsDAO.deleteById(id);
@@ -34,8 +35,8 @@ public class RewardsServiceImpl implements RewardsService {
     }
 
     @Override
-    public List<Rewards> selectByKeywords(String keywords) {
-        List<Rewards> rewardsList = null;
+    public List<RewardsVO> selectByKeywords(String keywords) {
+        List<RewardsVO> rewardsList = null;
         try {
             rewardsList = rewardsDAO.selectByKeywords(keywords);
         } catch (SQLException e) {

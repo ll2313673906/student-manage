@@ -6,12 +6,10 @@ import com.sm.entity.StudentVO;
 import com.sm.factory.DAOFactory;
 import org.junit.Test;
 
-import java.awt.*;
 import java.sql.SQLException;
-import java.util.Date;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class StudentDAOImplTest {
     private StudentDAO studentDAO = DAOFactory.getStudentDAOIntance();
@@ -83,19 +81,6 @@ public class StudentDAOImplTest {
     }
 
     @Test
-    public void insertStudent() throws SQLException {
-        Student student = new Student();
-        student.setId("111");
-        student.setClassID(2);
-        student.setStudentName("刘恋");
-        student.setBirthday(new Date());
-        student.setAvatar("");
-        student.setGender("女");
-        student.setAddress("南京");
-        student.setPhone("222222");
-
-
-        int n = studentDAO.insertStudent(student);
-        assertEquals(1,n);
+    public void insertStudent() {
     }
 }

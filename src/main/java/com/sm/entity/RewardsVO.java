@@ -2,12 +2,31 @@ package com.sm.entity;
 
 import java.util.Date;
 
-public class Rewards {
+public class RewardsVO {
     private Integer id;
     private String type;
     private Date rewardsDate;
     private String studentNumber;
     private String reason;
+    private String className;
+    private String departmentName;
+    private String studentName;
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
 
     public Integer getId() {
         return id;
@@ -33,14 +52,6 @@ public class Rewards {
         this.rewardsDate = rewardsDate;
     }
 
-    public String getStudentNumber() {
-        return studentNumber;
-    }
-
-    public void setStudentNumber(String studentNumber) {
-        this.studentNumber = studentNumber;
-    }
-
     public String getReason() {
         return reason;
     }
@@ -49,14 +60,24 @@ public class Rewards {
         this.reason = reason;
     }
 
+    public String getStudentNumber() {
+        return studentNumber;
+    }
+
+    public void setStudentNumber(String studentNumber) {
+        this.studentNumber = studentNumber;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public void setStudentName(String studentName) {
+        this.studentName = studentName;
+    }
+
     @Override
     public String toString() {
-        return "Rewards{" +
-                "id=" + id +
-                ", type='" + type + '\'' +
-                ", rewardsDate=" + rewardsDate +
-                ", studentNumber='" + studentNumber + '\'' +
-                ", reason='" + reason + '\'' +
-                '}';
+        return  studentName ;
     }
 }
